@@ -21,7 +21,7 @@
 4. 
 
 ## 시연동영상
-- Web<br>
+- 웹사이트<br>
 <img width="50%" src="https://user-images.githubusercontent.com/66001046/144420434-35c34b70-32e0-47dd-92ef-6fdf8b500ec3.gif"><img width="50%" src="https://user-images.githubusercontent.com/66001046/144420442-6b5d51df-088f-4191-bbdc-3bf0789c6cf9.gif">
 <img width="50%" src="https://user-images.githubusercontent.com/66001046/144426056-38a1ec61-fa75-4e15-99fb-5be922652198.gif"><img width="50%" src="https://user-images.githubusercontent.com/66001046/144426072-cb044516-463a-4f84-97b7-318a1da973e2.gif">
-- Data Visualization
+- 데이터 시각화<br>
