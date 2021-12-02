@@ -1,7 +1,6 @@
 # 한림대학교 캡스톤디자인 '오늘 뭐 볼래?'
 ---
 <img src=README/main_screen.png>
-<img src=README/main_creator2.png>
 20210830~20211204
 
 ## 구현목적 : 크롤링을 통한 키워드 영화추천 시스템
@@ -22,7 +21,7 @@
 4. 
 
 ## 시연동영상
-<img src=README/시연동영상1.gif>
-<img src=README/시연동영상2.gif>
-<img src=README/시연동영상3.gif>
-<img src=README/시연동영상4.gif>
+<img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상1.gif">
+<img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상2.gif">
+<img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상3.gif">
+<img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상4.gif">
