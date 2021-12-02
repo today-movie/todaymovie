@@ -21,9 +21,9 @@
 4. 
 
 ## 시연동영상
-[![Watch the video](https://README/시연동영상1.gif)
-[![Watch the video](https://README/시연동영상1.mov)
-<img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상1.gif">
+[![Watch the video](https://https://github.com/today-movie/todaymovie/README/시연동영상1.gif)
+[![Watch the video](https://https://github.com/today-movie/todaymovie/README/시연동영상1.mov)
+<img width="80%" src="https://https://github.com/today-movie/todaymovie/README/시연동영상1.gif.gif">
 <img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상2.gif">
 <img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상3.gif">
 <img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상4.gif">
