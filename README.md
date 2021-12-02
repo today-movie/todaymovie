@@ -21,5 +21,4 @@
 4. 
 
 ## 시연동영상
-<img width="50%" src="https://user-images.githubusercontent.com/66001046/144420434-35c34b70-32e0-47dd-92ef-6fdf8b500ec3.gif">
-<img width="50%" src="https://user-images.githubusercontent.com/66001046/144420442-6b5d51df-088f-4191-bbdc-3bf0789c6cf9.gif">
+<img width="50%" src="https://user-images.githubusercontent.com/66001046/144420434-35c34b70-32e0-47dd-92ef-6fdf8b500ec3.gif"><img width="50%" src="https://user-images.githubusercontent.com/66001046/144420442-6b5d51df-088f-4191-bbdc-3bf0789c6cf9.gif">
