@@ -22,7 +22,7 @@
 4. 
 
 ## 시연동영상
-<img width="80%" src="README/시연동영상1.gif" />
-<img width="80%" src="README/시연동영상2.gif" />
-<img width="80%" src="README/시연동영상3.gif" />
-<img width="80%" src="README/시연동영상4.gif" />
+<img width="80%" src=README/시연동영상1.gif />
+<img width="80%" src=README/시연동영상2.gif />
+<img width="80%" src=README/시연동영상3.gif />
+<img width="80%" src=README/시연동영상4.gif />
