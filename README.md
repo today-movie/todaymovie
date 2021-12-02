@@ -22,6 +22,6 @@
 
 ## 시연동영상
 <img width=80% src=./README/시연동영상1.gif>
-<img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상2.gif">
+![시연동영상2](https://user-images.githubusercontent.com/66001046/144415471-4f349dac-c6cc-4d00-9597-5c74aae77607.gif)
 <img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상3.gif">
 <img width="80%" src="https://github.com/today-movie/todaymovie/blob/master/README/시연동영상4.gif">
