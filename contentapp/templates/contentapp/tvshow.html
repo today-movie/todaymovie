@@ -1,0 +1,111 @@
+{% extends 'index.html' %}
+
+{% load bootstrap4 %}
+{% block content %}
+
+    <div style="margin: 15rem 0 15rem 0">
+    <div style="text-align: center; margin-bottom: 30px">
+        <h1>TV 프로그램</h1>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvaction' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    액션
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvadven' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    모험
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvani' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    애니메이션
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvcomedy' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    코미디
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvcrime' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    범죄
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvdocu' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    다큐
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvfamily' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    가족
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="{% url 'contentapp:tvfanta' %}" class="css-text-deco">
+                <img src="/static/image/mainimage01.jpg" alt="슬라이드 1">
+                <div style="text-align: center; font-size: 30px">
+                    판타지
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+
+{% endblock %}

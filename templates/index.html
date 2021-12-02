@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+{% load static %}
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- title -->
+    <title>오늘 뭐 볼래 ?</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- JAVASCRIPTS -->
+    <script defer src="/static/js/magicgrid.js"></script>
+    <script defer src="/static/js/search.js"></script>
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE MATERIAL ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+
+    <style>
+        @font-face {
+            font-family: 'NanumSquareR';
+            src: local('NanumSquareR');
+            url("{% static 'fonts/NanumSquareR.ttf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareEB';
+            src: local('NanumSquareEB');
+            url("{% static 'fonts/NanumSquareEB.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareB';
+            src: local('NanumSquareB');
+            url("{% static 'fonts/NanumSquareB.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'NanumSquareR';
+            src: local('NanumSquareR');
+            url("{% static 'fonts/NanumSquareR.otf' %}") format("opentype");
+        }
+    </style>
+</head>
+
+
+<!-- body -->
+<body>
+
+    <!-- 헤더 -->
+    <nav class="css-navbar">
+
+        <!-- 헤더 로고 영역 -->
+        <div class="css-navbar__logo" style="margin: 0 15px 0 0">
+            <a href="{% url 'contentappcreator' %}">
+                <img src="/static/image/main_logo.png" alt="" style="width: 40px; height: 40px">
+            </a>
+
+        </div>
+        <div class="css-navbar__logo">
+            <a href="{% url 'todaymovieapp:main' %}" class="css-text-deco">오늘 뭐 볼래 ?</a>
+        </div>
+
+        <!-- 헤더 게시판 영역 -->
+        <ul class="css-navbar__menu">
+            <li>
+                <a href="{% url 'contentapp:movie' %}" class="css-text-deco">영화</a>
+            </li>
+            <li>
+                <a href="{% url 'contentapp:tvshow' %}" class="css-text-deco">TV 프로그램</a>
+            </li>
+            <li>
+                <a href="{% url 'articleapp:list' %}" class="css-text-deco">리뷰</a>
+            </li>
+        </ul>
+
+        <!-- 헤더 검색 영역 -->
+        <div class="css-navbar__search">
+            <form id="sform" name="sform" action="https://pedia.watcha.com/ko-KR/search" method="get" role="search">
+                <div class="search">
+                    <div class="searchbar">
+                        <input id="query" name="query" type="text" title="검색어 입력"
+                               maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;"
+                               autocomplete="off" placeholder="검색어를 입력하세요."
+                               onclick="document.getElementById('fbm').value=1;" value="" data-atcmp-element="">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 헤더 검색 및 로그인 영역 -->
+        <ul class="css-navbar__login">
+            {% if not user.is_authenticated %}
+            <li>
+                <a href="{% url 'todaymovieapp:login' %}?next={% url 'todaymovieapp:main' %}" class="css-text-deco">로그인</a>
+            </li>
+            <li>
+                <a href="{% url 'todaymovieapp:create' %}" class="css-text-deco">회원가입</a>
+            </li>
+            {% else %}
+            <li>
+                <a href="{% url 'todaymovieapp:logout' %}?next={% url 'todaymovieapp:main' %}" class="css-text-deco">로그아웃</a>
+            </li>
+            <li>
+                <a href="{% url 'todaymovieapp:detail' pk=user.pk %}" class="css-text-deco">마이페이지</a>
+            </li>
+            {% endif %}
+        </ul>
+
+    </nav>
+
+    <!-- 컨텐츠 영역 -->
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+
+
+
+</html>

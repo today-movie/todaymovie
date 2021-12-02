@@ -1,0 +1,24 @@
+
+<div style="border-radius: 1rem; border-color: #bbb;
+    border: 1px solid; text-align: left; padding: 3%; margin: 1rem">
+
+    <div>
+        <strong>
+            {{ comment.writer.profile.nickname }}
+        </strong>
+        &nbsp&nbsp&nbsp
+        {{ comment.created_at }}
+    </div>
+    <div style="margin-top: 0.5rem">
+        {{ comment.content }}
+    </div>
+    {% if comment.writer == user %}
+    <div style="text-align: right">
+        <a class="material-icons"
+           href="{% url 'commentapp:delete' pk=comment.pk %}">
+        clear
+        </a>
+    </div>
+    {% endif %}
+
+</div>

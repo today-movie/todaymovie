@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% load bootstrap4 %}
+{% block content %}
+
+
+<section style="margin: 50px 350px 0 350px">
+    <div class="slidebox">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+
+        <ul class="slidelist">
+            <li class="slideitem">
+                <div>
+                    <label for="slide03" class="left"></label>
+                    <label for="slide02" class="right"></label>
+                    <a><img src="/static/image/mainimage01.jpg" style="width: 100%; height: 75%; border-radius: 30px" alt=""></a>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide01" class="left"></label>
+                    <label for="slide03" class="right"></label>
+                    <a><img src="/static/image/mainimage02.jpg" style="width: 100%; height: 75%; border-radius: 30px" alt=""></a>
+                </div>
+            </li>
+            <li class="slideitem">
+                <div>
+                    <label for="slide02" class="left"></label>
+                    <label for="slide01" class="right"></label>
+                    <a><img src="/static/image/mainimage03.jpg" style="width: 100%; height: 75%; border-radius: 30px" alt=""></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+{% endblock %}
