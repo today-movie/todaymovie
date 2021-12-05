@@ -1,6 +1,6 @@
 # 한림대학교 캡스톤디자인 '오늘 뭐 볼래?'
 ---
-<img src=README/main_creator2.png>
+<img src=README/readme_main.png>
 20210830~20211204
 
 ## 구현목적 : 크롤링을 통한 키워드 영화추천 시스템
@@ -21,7 +21,10 @@
 4. 
 
 ## 시연동영상
+- 데이터 시각화<br>
+<img width="50%" src="https://user-images.githubusercontent.com/66001046/144744851-18d7ec3d-8fd5-486a-bd02-3fab45771ba4.gif">
+<img width="50%" src="https://user-images.githubusercontent.com/66001046/144744853-03115b7c-6862-449a-9927-f50145448879.gif">
+
 - 웹사이트<br>
 <img width="50%" src="https://user-images.githubusercontent.com/66001046/144420434-35c34b70-32e0-47dd-92ef-6fdf8b500ec3.gif"><img width="50%" src="https://user-images.githubusercontent.com/66001046/144420442-6b5d51df-088f-4191-bbdc-3bf0789c6cf9.gif">
 <img width="50%" src="https://user-images.githubusercontent.com/66001046/144426056-38a1ec61-fa75-4e15-99fb-5be922652198.gif"><img width="50%" src="https://user-images.githubusercontent.com/66001046/144426072-cb044516-463a-4f84-97b7-318a1da973e2.gif">
-- 데이터 시각화<br>
